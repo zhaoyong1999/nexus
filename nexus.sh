@@ -67,7 +67,7 @@ function start_node() {
     else
         echo "Rust 未安装，正在安装 Rust..."
         # 使用 rustup 安装 Rust
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -y
         echo "Rust 安装完成。"
         
         # 加载 Rust 环境
